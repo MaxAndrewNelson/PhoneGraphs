@@ -8,5 +8,7 @@ After cloning the repository, a minimal working example can be run with:
 
 `Run_Template.sh`
 
+This template file uses relative paths, so it will run from the `expts` directory. The example learns a class system from the type frequencies of the English Onset corpus used by Hayes-Wilson (2008), builds and fits a MaxEnt n-gram phonotactic grammar to the same corpus, and then uses the resulting grammar to make well-formedness judgements of the test forms from Daland et al. (2011)'s human experiments. It then reports the Kendall's Tau and Pearson's $r$ scores between the model's judgments and Daland et al.'s aggregated human well-formedness scores. The specifics of the class learning algorithm and phonotactic model used in the example can be seen in `expts/confs/English_SC_onsets.config`. This example uses spectral clustering on the phonological environment graph. Correlations with human judgements 
+
 
 
